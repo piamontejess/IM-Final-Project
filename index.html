@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Monitoring System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('photos/Background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 50px;
+        }
+        .icon img {
+            width: 120vh; /* Adjusted width using vh */
+            height: auto;
+            margin-left: -50vh; /* Adjust margin to move it left */
+        }
+        .icon h3 {
+            color: #00392e;
+            font-size: 40px;
+            margin-top: -10vh;
+            margin-left: -50vh;
+        }
+
+        .text-section {
+            color: #fff;
+            max-width: 450px;
+            width: 100%;
+        }
+        .welcome-text h1 {
+            font-size: 100px; /* Increased font size */
+            color: #00392e;
+            margin-top:5vh;
+            margin-bottom: 5vh;
+            margin-left: -2vh;
+            ;
+        }
+        .welcome-text p {
+            font-size: 20px; /* Increased font size */
+            color: #00392e;
+            width:500px;
+            margin-bottom: 30px;
+        }
+        .login-container {
+            max-width: 400px;
+            width: 100%;
+            margin-top: 5vh;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #004d40;
+            margin-bottom: 10px;
+        }
+        .form-group input{
+            margin-bottom: 50px;
+            height:50px;
+            border-radius: 10px;
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+        }
+        .btn-login {
+            background-color: #004d40;
+            color: #fff;
+            border: none;
+            width: 48%;
+        }
+        .btn-login:hover {
+            background-color: #00392e;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .create-account a {
+            color: #004d40;
+            text-decoration: none;
+        }
+        .create-account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <img class="logo" src="photos/logoattendance copy.png" alt="Logo">
+            <h3>Attendance Monitoring System</h3>
+        </div>
+        <div class="text-section">
+            <div class="welcome-text">
+                <h1>Welcome!</h1>
+                <p>A system where students can time in for classes, and their guardians receive a real-time <br>notification confirming their attendance.</p>
+            </div>
+            <div class="login-container">
+                <div class="form-group">
+                    <label for="idNumber">Identification Number</label>
+                    <input type="text" class="form-control" id="idNumber" placeholder="Enter your ID number">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-login">Login</button>
+                    <div class="create-account">
+                        <a href="#">Create an Account?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
